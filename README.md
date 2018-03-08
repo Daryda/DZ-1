@@ -6,3 +6,12 @@
 * '-W', '--W_output', Print W, Вывести матрицу
 * '-l', '--label', The Needleman–Wunsch algorithm to align protein sequences and build heat-map.
 * '-i', '--input', Input filename for analise/Имя выходного файла, обязательно
+
+## Пример 
+$ python3 Dz3-arparse.py -i input_file.vcf -m -7 -W -l
+
+Последовательности из файла input_file.vcf будут выравнены со штрафом -7, выведена матрица выравниваний и её карта-плотности(?)
+
+$ python3 Dz3-arparse.py -i input_file.vcf -W
+
+Последовательности из файла input_file.vcf будут выравнены со стандартным штрафом -5, выведена только матрица выравниваний 
